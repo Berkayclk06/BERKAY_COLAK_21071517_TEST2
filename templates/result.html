@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Results</title>
+</head>
+<body>
+    <div>
+        <nav class="menu">
+            <a class="nav-button" href="#">About Us</a>
+            <a class="nav-button" href="#">Contact Us</a>
+            <a class="nav-button" href="#">Services</a>
+            <a class="nav-button" href="#">Team</a>
+        </nav>
+    </div>
+    <div>
+        <div>
+            <h3>Conversion successful!</h3>
+
+            {% if ch == '1' %}
+            <p>{{ weight_pounds }} pounds = {{ weight_kg }} kilograms</p>
+            {% endif %}
+
+            {% if ch == '2' %}
+            <p>{{ distance_miles }} miles = {{ distance_km }} kilometers</p>
+            {% endif %}
+
+            {% if ch == '3' %}
+            <p>{{ temperature_fahrenheit }} Fahrenheit = {{ temperature_celsius }} Celsius</p>
+            {% endif %}
+        </div>
+    </div>
+    
+</body>
+</html>
